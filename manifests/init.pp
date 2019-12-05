@@ -27,7 +27,7 @@ class confluence (
   # Misc Settings
   $download_url                                                  = 'https://www.atlassian.com/software/confluence/downloads/binary',
   $checksum                                                      = undef,
-  $user_agent                                                    = 'curl/7.54.0'.
+  $user_agent                                                    = 'curl/7.54.0',
   # Choose whether to use puppet-staging, or puppet-archive
   $deploy_module                                                 = 'archive',
   # Manage confluence server
