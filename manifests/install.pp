@@ -75,7 +75,7 @@ class confluence::install {
         extract_path     => $confluence::webappdir,
         source           => "${confluence::download_url}/${file}",
         creates          => "${confluence::webappdir}/conf",
-        download_options => "--user-agent ${confluence::user_agent}",
+        download_options => "--user-agent '${confluence::user_agent}'",
         cleanup          => true,
         checksum_verify  => $confluence::checksum_verify,
         checksum_type    => 'md5',
